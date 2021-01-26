@@ -7,7 +7,7 @@ const aboutMeComp = props => {
     return(
         <div className = "AboutMeComp">
             <div className = "PictureWrapper">
-                <img src = {img} className = "Picture">
+                <img src = {img} className = "Picture" alt="Bilde av meg">
                 </img>
             </div>
            
