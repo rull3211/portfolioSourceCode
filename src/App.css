@@ -1,0 +1,226 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+.App{
+  background-color: rgb(250, 228, 200);
+  width: 100%;
+  height: 100%;
+}
+.Header{
+  position: relative;
+}
+.TextContent{
+  width:70%;
+  height:100%;
+  font-size: 16px;
+  color: transparent;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+.ContentWrapper{
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MainContent{
+  height: 130vh;
+}
+
+.NameEl{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.NameWrapper{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-right: 7%;
+}
+.NameWrapper > p{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+}
+
+.Row{
+  display: flex;
+  flex-direction: row;
+}
+
+.Content{
+  display: flex;
+  flex-direction: column;
+}
+.NavBar{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 10vh;
+  background-color: rgb(104, 104, 104);
+}
+
+.NavEl{
+  display: flex;
+  flex-direction: row;
+  height: 19px;
+}
+.NavElWrapper > a{
+  display: flex;
+  color: white;
+  height: 19px;
+  text-decoration: none;
+}
+.NavElWrapper > p{
+  display: flex;
+  justify-content: center;
+  color: white;
+  height: 19px;
+  text-decoration: none;
+}
+
+.MainContent{
+  display: flex;
+  flex-direction: column;
+}
+.NavElWrapper{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: fit-content;
+  padding-left: 3%;
+}
+
+.NavElWrapper p:hover{
+  border-bottom: 1px solid rgb(255, 254, 254);
+  cursor: pointer;
+}
+.NavElWrapper a:hover{
+  border-bottom: 1px solid rgb(255, 254, 254);
+  cursor: pointer;
+}
+.CTW{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: rgb(104, 104, 104);
+  height: 15vh;
+}
+.ContactWrapper{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgb(104, 104, 104);
+  height: 10vh;
+}
+.ContactWrapper > a{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 3%;
+  color: white;
+  text-decoration: none;
+  width: fit-content;
+  height: fit-content;
+}
+.ContactWrapper > p{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: fit-content;
+  color: white;
+  padding-left: 3%;
+  height: fit-content;
+  
+}
+.AboutMeComp{
+  height: 80vh;
+  display:flex;
+}
+.AboutMeWrapper > p{
+  height: fit-content;
+  width: 80%;
+  color: black;
+}
+.AboutMeWrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Picture{
+  height: 70vh;
+  width: 70vh;
+  border-radius: 100%;
+}
+.PictureWrapper{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.ContentWrapper > a {
+  text-decoration: none;
+}
+@media screen and (max-width: 992px){
+  .TextContent{
+    width: 90%;
+    height: 100%;
+  }
+  .AboutMeComp{
+    flex-direction: column;
+    height: fit-content;
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+  .Content{
+    display: flex;
+    flex-direction: column;
+  }
+  .MainContent{
+    height: 360vh;
+  }
+ 
+  .Row{
+    flex-direction: column;
+    height: 120vh;
+  }
+}
+@media screen and (max-width: 600px){
+  .Content{
+    display: flex;
+    flex-direction: column;
+  }
+  .MainContent{
+    height: 270vh;
+  }
+ 
+  .Row{
+    flex-direction: column;
+    height: 90vh;
+  }
+}
+@media (max-aspect-ratio:3/4){
+  .Picture{
+    width:95vw;
+    height: 95vw;
+  }
+}
+@media screen and (max-width: 475px){
+  .ContactWrapper p{
+    font-size: 12px;
+  }
+  .ContactWrapper a{
+    font-size: 12px;
+  }
+}
