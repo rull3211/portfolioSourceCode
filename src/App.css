@@ -34,11 +34,17 @@ a{
   display: flex;
   align-items: center;
 }
+.SecondaryWrapper{
+  display: flex;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;  
+  padding-left: 3%;
+}
 .NavElWrapper p{
   margin: 0;
   font-size: 16px;
   flex-direction: row;
-  
   flex:1;
 }
 .NavElWrapper a{
@@ -59,13 +65,20 @@ a{
 .NavBar {
   color: white;
 }
-
+.AboutMe{
+  padding-left: 15%;
+}
+.Source{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 15%;
+}
 .NavElWrapper{
   display: flex;
   height: fit-content;
-  padding-left: 2%;
+  width: fit-content;
 }
-
 .NavElWrapper p:hover{
   border-bottom: 1px solid rgb(255, 254, 254);
   cursor: pointer;
@@ -170,6 +183,38 @@ a{
     justify-content: center;
     align-items: center;
   }
+ 
+  @media (max-width: 1000px){
+    .Row{
+      flex-direction: column;
+  
+    }
+    .Content1{
+      height: 600vh;
+    }
+    .Content2{
+      height: fit-content;
+    }
+    .AboutMeComp{
+      padding-top: 2%;
+      height: fit-content;
+      flex-direction: column;
+    }
+    .TextContent{
+      width: 95%;
+    }
+    .SecondaryWrapper{
+      flex-direction: column;
+    }
+    .AboutMe, .Source{
+      padding: 0;
+    }
+    .Link{
+      word-break: break-all;
+    }
+    
+  }
+
 @media only screen 
   and (max-width : 900px) 
   and (max-height : 900px)
@@ -191,14 +236,13 @@ a{
     }
   }
 
-
 @media only screen 
     and (max-width : 600px) 
     and (max-height : 900px)
     and (orientation : portrait)  
     { 
       .Content1{
-        height: 300vh;
+        height: wrap;
       }
       
       .MainContent{
