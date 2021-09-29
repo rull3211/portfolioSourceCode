@@ -5,32 +5,24 @@ const navBar = props => {
 
 
     return(
-        <li className = "NavBar">
-            <div className = "NavEl">
-                <div className = "NavElWrapper">
-                    <p onClick = {props.homeHandler} className = "Home">
-                        HOME
-                    </p>
-                </div>
-                <div className = "NavElWrapper">
-                    <p  onClick = {props.aboutHandler} className = "AboutMe">
-                       ABOUT
-                    </p>
-                </div>
-                <div className = "NavElWrapper">
-                    <a className = "Contact" href = {`#${props.href}`}>
-                        CONTACT
-                    </a>
-                </div>
+        <div className = "NavBar">
+            <div className = "Left">
+                <p onClick = {props.homeHandler}>
+                    HOME
+                </p>
+                <p  onClick = {props.aboutHandler}>
+                    ABOUT
+                </p>
+                <a href = {`#${props.href}`}>
+                    CONTACT
+                </a>
             </div>
-            <div className = "NameEl">
-                <div className = "NameWrapper">
-                    <p className = "Name">
-                        {props.name}
-                    </p>
-                </div>
+            <div  className = "Right">
+                <p>
+                {props.name}
+                </p>
             </div>
-        </li>
+        </div>
     )
 }
 export default navBar

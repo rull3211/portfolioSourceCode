@@ -19,8 +19,6 @@ const InfoComp = props => {
     ` 
 
     const StyledContent2 = styled.div`
-        
-        
         &:hover a{
             color: white;
             transition: 1s;
